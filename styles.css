@@ -69,7 +69,30 @@ main { flex: 1; width: min(1080px, calc(100% - 28px)); margin: 22px auto 40px; }
   border-radius: 22px;
   box-shadow: var(--shadow);
 }
-.hero { padding: 36px 28px; text-align: center; }
+.hero { padding: 22px 18px 36px; text-align: center; }
+.cover-wrap {
+  margin: 0 0 18px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: 0 0 40px rgba(62, 207, 122, .18);
+}
+.cover-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 72vh;
+  object-fit: cover;
+  object-position: center top;
+}
+.tagline {
+  font-family: Cinzel, serif;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold-2);
+  font-size: 13px;
+  margin: 0 0 8px;
+}
 .hero h1 {
   font-family: Cinzel, serif; font-size: clamp(28px, 5vw, 48px);
   margin: 8px 0 10px; color: var(--gold-2);
@@ -87,7 +110,6 @@ button.ghost, .btn.ghost {
   background: transparent; color: var(--gold-2);
   border: 1px solid var(--gold);
 }
-button.danger { background: linear-gradient(180deg, #ef8a7d, #b44538); color: #fff; }
 .grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 14px; margin-top: 22px;
@@ -124,5 +146,5 @@ button.danger { background: linear-gradient(180deg, #ef8a7d, #b44538); color: #f
 .tiny { color: var(--muted); font-size: 13px; }
 @media (max-width: 700px) {
   .topbar { flex-direction: column; align-items: flex-start; }
-  .hero { padding: 24px 16px; }
+  .hero { padding: 16px 12px 24px; }
 }
