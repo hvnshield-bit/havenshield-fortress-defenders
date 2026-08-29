@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>HavenShield Fortress Defenders</title>
+  <meta name="description" content="A free public cybersecurity training game from HavenShield. Defend your digital fortress by spotting phishing, building strong passwords, and locking down the 8 Shields of Digital Safety." />
+  <meta name="theme-color" content="#0b1f14" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <header class="topbar">
+    <div class="brand" onclick="showScreen('home')">
+      <div class="shield">🛡️</div>
+      <div>
+        <div class="brand-name">HavenShield</div>
+        <div class="brand-sub">Fortress Defenders</div>
+      </div>
+    </div>
+    <div class="hud">
+      <div class="stat"><span>Score</span><strong id="hud-score">0</strong></div>
+      <div class="stat"><span>Shields</span><strong id="hud-shields">0/8</strong></div>
+      <div class="stat"><span>Rank</span><strong id="hud-rank">Recruit</strong></div>
+    </div>
+  </header>
+  <main id="app"></main>
+  <footer class="foot">
+    <span>Free public training from HavenShield</span>
+    <a href="https://hvnshield.com" target="_blank" rel="noopener">hvnshield.com</a>
+    <span>Secure. Smart. Sustainable.</span>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
